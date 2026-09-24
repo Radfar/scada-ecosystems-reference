@@ -1,6 +1,6 @@
 # Modern SCADA & HMI Reference Implementations
 
-[![License: MIT](https://shields.io)](https://opensource.org)
+[![License: MIT](https://github.com/Radfar/scada-ecosystems-reference/blob/main/LICENSE)
 [![Industry 4.0](https://shields.io)]()
 [![Platform Support](https://shields.io)]()
 
