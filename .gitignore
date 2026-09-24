@@ -1,0 +1,52 @@
+# ====================================================================
+# Industrial DevOps - Master SCADA Git Ignore Blueprint
+# Includes Siemens TIA Portal, FactoryTalk Optix, & Ignition Caches
+# ====================================================================
+
+# --- OS & System Files ---
+Thumbs.db
+.DS_Store
+*.tmp
+*.bak
+*.log
+
+# --- Siemens TIA Portal & WinCC Unified ---
+# Ignore massive local compilation databases, locks, and logs
+[X_x]*
+*.ldf
+*.mdf
+*.ulog
+*.CoreCompileAsset
+~*
+_Compile_Log_*
+*Log.txt
+/implementations/wincc-unified/IM/
+/implementations/wincc-unified/UserFiles/
+/implementations/wincc-unified/Logs/
+/implementations/wincc-unified/HmiLog/
+
+# --- Rockwell Automation & FactoryTalk Optix ---
+# Ignore localized user IDE preferences, build targets, and .NET NuGet objects
+.ftoptix.user
+*.user
+*.userprefs
+/implementations/factorytalk-optix/bin/
+/implementations/factorytalk-optix/obj/
+/implementations/factorytalk-optix/.vs/
+/implementations/factorytalk-optix/packages/
+_Backup/
+
+# --- Inductive Automation Ignition ---
+# Ignore active designer workspace cache files and temp wrappers
+.ignition/
+/implementations/ignition-perspective/data/tmp/
+/implementations/ignition-perspective/logs/
+gwbk-extracted-temp/
+
+# --- Standard IDEs (VS Code / Visual Studio) ---
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
